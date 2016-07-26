@@ -1054,7 +1054,7 @@ class Breadcrumb_Trail {
 	 * @param  string $path The path (slug) to search for posts by.
 	 * @return void
 	 */
-	function add_path_parents( $path ) {
+	protected function add_path_parents( $path ) {
 
 		// Trim '/' off $path in case we just got a simple '/' instead of a real path.
 		$path = trim( $path, '/' );
